@@ -1,0 +1,8 @@
+# This root repo tracks ONLY the engineering handbook (README + docs/).
+# Each project directory is its own independent git repository — see README.md,
+# section "Why the Repos Are Organized This Way". Nesting git repos causes
+# confusing "gitlink" behavior, so we exclude them here entirely.
+project-*/
+
+# OS noise
+.DS_Store
