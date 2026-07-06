@@ -6,3 +6,7 @@ project-*/
 
 # OS noise
 .DS_Store
+
+# Local tooling config (Claude Code dev-server launcher) — machine-specific,
+# so it stays out of version control, same as .vscode/ or .idea/ on many teams.
+.claude/
