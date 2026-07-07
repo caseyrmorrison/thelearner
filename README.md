@@ -53,7 +53,8 @@ onboarding wiki at a good company would be:
 10. [Android Development](docs/12-android-development.md) — components & lifecycle, Kotlin as modern-Java's destination, Compose, Gradle, Play reality
 11. [Game Development](docs/13-game-development.md) — the game loop, fixed timesteps, collision detection, "juice", and an honest Godot/Unity/Unreal decision map
 12. [Anatomy of a Codebase](docs/14-anatomy-of-a-codebase.md) — why each ecosystem's projects are shaped the way they are: tooling contracts vs. conventions, what's committed vs. ignored, and how to read any unfamiliar repo (each project's ARCHITECTURE.md has a matching "Why this shape" section)
-13. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+13. [Game Modding](docs/15-game-modding.md) — how to mod a game you didn't write: the moddability spectrum, reconnaissance, file formats & mod loaders, the reverse-engineering deep end, and the legal/ethical rules — with a "make Rebound moddable" lab
+14. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
 
 ## The Capstone
 
