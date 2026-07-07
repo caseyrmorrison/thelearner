@@ -38,7 +38,17 @@ onboarding wiki at a good company would be:
 5. [Algorithms in Practice](docs/05-algorithms-in-practice.md) — the algorithms these projects use, and where classic CS actually shows up at work
 6. [Databases](docs/07-databases.md) — schema design, transactions, indexes, migrations, and the ORM debate — with a hands-on lab track through the projects
 7. [Networking & API Integration](docs/08-networking-and-apis.md) — HTTP anatomy, consuming external APIs safely (timeouts, retries, auth, rate limits), webhooks — with its own lab track
-8. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+8. [Debugging & Observability](docs/09-debugging-and-observability.md) — the debugging method, per-stack debugger fluency, profiling, logging, and a planted **bug hunt** to practice on
+9. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+
+## The Capstone
+
+When you've done a Sprint 2 in both Stockroom and Ledger, the
+[**Procurement Pipeline capstone**](docs/10-capstone-procurement-pipeline.md) connects
+them: Stockroom exposes its first real HTTP API, Ledger grows a `purchase` command that
+orders through it, and you — owning both sides — run the full lifecycle of a real
+integration: contract-first design, implementation on each side, failure drills, and
+surviving a breaking change. It's the closest thing here to genuine industry experience.
 
 ## How to Work Through a Project
 
