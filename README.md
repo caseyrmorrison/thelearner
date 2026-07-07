@@ -52,7 +52,8 @@ onboarding wiki at a good company would be:
 9. [iOS Development](docs/11-ios-development.md) — the platform model, Swift for polyglots, SwiftUI's state→render loop, MVVM, App Store reality
 10. [Android Development](docs/12-android-development.md) — components & lifecycle, Kotlin as modern-Java's destination, Compose, Gradle, Play reality
 11. [Game Development](docs/13-game-development.md) — the game loop, fixed timesteps, collision detection, "juice", and an honest Godot/Unity/Unreal decision map
-12. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+12. [Anatomy of a Codebase](docs/14-anatomy-of-a-codebase.md) — why each ecosystem's projects are shaped the way they are: tooling contracts vs. conventions, what's committed vs. ignored, and how to read any unfamiliar repo (each project's ARCHITECTURE.md has a matching "Why this shape" section)
+13. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
 
 ## The Capstone
 
