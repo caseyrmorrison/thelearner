@@ -36,7 +36,9 @@ onboarding wiki at a good company would be:
 3. [Engineering Practices](docs/03-engineering-practices.md) — SOLID, testing, CI/CD, code review checklists, documentation culture
 4. [Architecture Guide](docs/04-architecture-guide.md) — layered architecture, the repository pattern, REST design, ADRs, and which project demonstrates what
 5. [Algorithms in Practice](docs/05-algorithms-in-practice.md) — the algorithms these projects use, and where classic CS actually shows up at work
-6. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+6. [Databases](docs/07-databases.md) — schema design, transactions, indexes, migrations, and the ORM debate — with a hands-on lab track through the projects
+7. [Networking & API Integration](docs/08-networking-and-apis.md) — HTTP anatomy, consuming external APIs safely (timeouts, retries, auth, rate limits), webhooks — with its own lab track
+8. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
 
 ## How to Work Through a Project
 
