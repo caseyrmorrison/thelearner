@@ -22,9 +22,15 @@ finished product. The backlog of what to build next is part of the deliverable.
 | 2 | [TaskFlow](project-2-taskflow-web/) — team sprint board | Node/Express + vanilla JS SPA | Full-stack client/server, REST API design, HTTP, topological sort for task dependencies, frontend without frameworks first | ⭐⭐ |
 | 3 | [Stockroom](project-3-stockroom-java/) — inventory & orders | Modern Java (records, sealed types, streams), Maven, JUnit 5 | OOP design patterns (strategy, factory, repository), domain modeling, priority queues, build tooling | ⭐⭐⭐ |
 | 4 | [SearchLite](project-4-searchlite-cpp/) — mini search engine | C++17, Make/CMake | Systems programming, RAII, move semantics, inverted indexes, TF-IDF ranking, manual memory discipline | ⭐⭐⭐⭐ |
+| 5 | [TaskFlow iOS](project-5-taskflow-ios/) — mobile client of #2 | Swift 6, SwiftUI | The iOS platform, value types, structured concurrency, declarative UI, MVVM, app lifecycle | ⭐⭐⭐ |
+| 6 | [TaskFlow Android](project-6-taskflow-android/) — mobile client of #2 | Kotlin, Jetpack Compose | The Android platform, coroutines/Flow, recomposition, build-enforced layering, Gradle | ⭐⭐⭐ |
+| 7 | [Rebound](project-7-rebound-game/) — Breakout clone, no engine | JavaScript, HTML5 canvas | Game loops & fixed timestep, collision math, state machines, game feel, when to graduate to an engine | ⭐⭐ |
 
 **Recommended order:** 1 → 2 → 3 → 4. Each project assumes slightly more independence
 than the last. But they're self-contained — follow your interest if something pulls you.
+The two mobile projects (5, 6) are clients of TaskFlow's REST API — do project 2 first,
+then either or both; building the same app twice is the point (the architecture stays
+constant while the platform changes).
 
 **Tooling:** everything runs with a standard dev setup (git, Node, Python 3, a JDK,
 clang/make) — see [SETUP.md](SETUP.md) for the verified versions, per-project first-run
@@ -43,7 +49,10 @@ onboarding wiki at a good company would be:
 6. [Databases](docs/07-databases.md) — schema design, transactions, indexes, migrations, and the ORM debate — with a hands-on lab track through the projects
 7. [Networking & API Integration](docs/08-networking-and-apis.md) — HTTP anatomy, consuming external APIs safely (timeouts, retries, auth, rate limits), webhooks — with its own lab track
 8. [Debugging & Observability](docs/09-debugging-and-observability.md) — the debugging method, per-stack debugger fluency, profiling, logging, and a planted **bug hunt** to practice on
-9. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+9. [iOS Development](docs/11-ios-development.md) — the platform model, Swift for polyglots, SwiftUI's state→render loop, MVVM, App Store reality
+10. [Android Development](docs/12-android-development.md) — components & lifecycle, Kotlin as modern-Java's destination, Compose, Gradle, Play reality
+11. [Game Development](docs/13-game-development.md) — the game loop, fixed timesteps, collision detection, "juice", and an honest Godot/Unity/Unreal decision map
+12. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
 
 ## The Capstone
 

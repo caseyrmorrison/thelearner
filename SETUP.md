@@ -71,6 +71,37 @@ each project's `.gitignore` for the reasoning comments.
 - **Paths contain a space** (`Coding Training`) — quote paths in your own shell
   commands and scripts.
 
+## Mobile toolchain (projects 5 & 6 — all present and verified)
+
+| Tool | Used by | Status on this machine | If missing |
+|---|---|---|---|
+| **Xcode** (full, not just CLT) | TaskFlow iOS | 26.3 installed, iPhone 16 simulators available | Mac App Store (large download; then `sudo xcode-select -s /Applications/Xcode.app`) |
+| **XcodeGen** | TaskFlow iOS (generates the `.xcodeproj` from `project.yml` — see its ADR-0001) | installed | `brew install xcodegen` |
+| **Android Studio** | TaskFlow Android | installed | https://developer.android.com/studio |
+| **Android SDK** | TaskFlow Android | `~/Library/Android/sdk` (platforms 34/35, build-tools ≤ 36) | installed by Android Studio's setup wizard |
+| **Gradle / JDK for Android** | TaskFlow Android | none needed — `./gradlew` wrapper is committed; if Gradle complains about the system JDK 24, point it at Android Studio's bundled JDK 21: `export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"` | — |
+
+Android-specific notes: `local.properties` (gitignored, machine-specific — the Android
+convention) must contain `sdk.dir=/Users/<you>/Library/Android/sdk`; the first
+`./gradlew` run downloads Gradle + dependencies. And inside the Android **emulator**,
+your Mac's localhost is `http://10.0.2.2:3000` — the iOS **Simulator** shares the Mac's
+network, so plain `localhost:3000` works there. Both apps expect the TaskFlow backend
+running (`npm start` in project 2).
+
+## Game project (project 7 — nothing to install)
+
+Rebound runs in the browser with no build step. Its logic tests use Node
+(`node --test`); to *play* it, serve the directory statically — ES modules won't load
+from `file://`:
+
+```bash
+cd project-7-rebound-game && python3 -m http.server 8080   # → http://localhost:8080
+```
+
+The Sprint 3 "port to Godot" story is the one that eventually wants an install:
+`brew install godot` (~100MB) — deliberately deferred until the from-scratch version
+has taught you what the engine is automating.
+
 ## Optional installs, keyed to when the curriculum needs them
 
 | Tool | Install | Needed when |
