@@ -26,6 +26,10 @@ finished product. The backlog of what to build next is part of the deliverable.
 **Recommended order:** 1 → 2 → 3 → 4. Each project assumes slightly more independence
 than the last. But they're self-contained — follow your interest if something pulls you.
 
+**Tooling:** everything runs with a standard dev setup (git, Node, Python 3, a JDK,
+clang/make) — see [SETUP.md](SETUP.md) for the verified versions, per-project first-run
+commands, and the short list of optional extras.
+
 ## The Engineering Handbook
 
 Read these before (or alongside) the first project. They're written the way an
