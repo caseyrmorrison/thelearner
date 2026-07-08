@@ -16,15 +16,18 @@ Each project is an independent git repository — just like separate repos in a 
 company's GitHub organization. Each one is a *working, tested starting point*, not a
 finished product. The backlog of what to build next is part of the deliverable.
 
+Each project name links to its GitHub repository; the local working directory is noted
+alongside.
+
 | # | Project | Stack | What it teaches | Difficulty |
 |---|---------|-------|-----------------|------------|
-| 1 | [Ledger](project-1-ledger-cli/) — personal finance CLI | Python 3.13, SQLite, pytest | Layered architecture, CLI design, correct money math (`Decimal`), packaging, repository pattern | ⭐ Start here |
-| 2 | [TaskFlow](project-2-taskflow-web/) — team sprint board | Node/Express + vanilla JS SPA | Full-stack client/server, REST API design, HTTP, topological sort for task dependencies, frontend without frameworks first | ⭐⭐ |
-| 3 | [Stockroom](project-3-stockroom-java/) — inventory & orders | Modern Java (records, sealed types, streams), Maven, JUnit 5 | OOP design patterns (strategy, factory, repository), domain modeling, priority queues, build tooling | ⭐⭐⭐ |
-| 4 | [SearchLite](project-4-searchlite-cpp/) — mini search engine | C++17, Make/CMake | Systems programming, RAII, move semantics, inverted indexes, TF-IDF ranking, manual memory discipline | ⭐⭐⭐⭐ |
-| 5 | [TaskFlow iOS](project-5-taskflow-ios/) — mobile client of #2 | Swift 6, SwiftUI | The iOS platform, value types, structured concurrency, declarative UI, MVVM, app lifecycle | ⭐⭐⭐ |
-| 6 | [TaskFlow Android](project-6-taskflow-android/) — mobile client of #2 | Kotlin, Jetpack Compose | The Android platform, coroutines/Flow, recomposition, build-enforced layering, Gradle | ⭐⭐⭐ |
-| 7 | [Rebound](project-7-rebound-game/) — Breakout clone, no engine | JavaScript, HTML5 canvas | Game loops & fixed timestep, collision math, state machines, game feel, when to graduate to an engine | ⭐⭐ |
+| 1 | [Ledger](https://github.com/caseyrmorrison/thelearner-ledger) — personal finance CLI (`project-1-ledger-cli/`) | Python 3.13, SQLite, pytest | Layered architecture, CLI design, correct money math (`Decimal`), packaging, repository pattern | ⭐ Start here |
+| 2 | [TaskFlow](https://github.com/caseyrmorrison/thelearner-taskflow-web) — team sprint board (`project-2-taskflow-web/`) | Node/Express + vanilla JS SPA | Full-stack client/server, REST API design, HTTP, topological sort for task dependencies, frontend without frameworks first | ⭐⭐ |
+| 3 | [Stockroom](https://github.com/caseyrmorrison/thelearner-stockroom) — inventory & orders (`project-3-stockroom-java/`) | Modern Java (records, sealed types, streams), Maven, JUnit 5 | OOP design patterns (strategy, factory, repository), domain modeling, priority queues, build tooling | ⭐⭐⭐ |
+| 4 | [SearchLite](https://github.com/caseyrmorrison/thelearner-searchlite) — mini search engine (`project-4-searchlite-cpp/`) | C++17, Make/CMake | Systems programming, RAII, move semantics, inverted indexes, TF-IDF ranking, manual memory discipline | ⭐⭐⭐⭐ |
+| 5 | [TaskFlow iOS](https://github.com/caseyrmorrison/thelearner-taskflow-ios) — mobile client of #2 (`project-5-taskflow-ios/`) | Swift 6, SwiftUI | The iOS platform, value types, structured concurrency, declarative UI, MVVM, app lifecycle | ⭐⭐⭐ |
+| 6 | [TaskFlow Android](https://github.com/caseyrmorrison/thelearner-taskflow-android) — mobile client of #2 (`project-6-taskflow-android/`) | Kotlin, Jetpack Compose | The Android platform, coroutines/Flow, recomposition, build-enforced layering, Gradle | ⭐⭐⭐ |
+| 7 | [Rebound](https://github.com/caseyrmorrison/thelearner-rebound) — Breakout clone, no engine (`project-7-rebound-game/`) | JavaScript, HTML5 canvas | Game loops & fixed timestep, collision math, state machines, game feel, when to graduate to an engine | ⭐⭐ |
 
 **Recommended order:** 1 → 2 → 3 → 4. Each project assumes slightly more independence
 than the last. But they're self-contained — follow your interest if something pulls you.
@@ -36,21 +39,10 @@ constant while the platform changes).
 clang/make) — see [SETUP.md](SETUP.md) for the verified versions, per-project first-run
 commands, and the short list of optional extras.
 
-**Published on GitHub.** Each project is its own repository (the multi-repo pattern this
-workspace teaches). The table's links point to local directories; the same code lives at:
-
-| Project | Repository |
-|---|---|
-| Ledger | [caseyrmorrison/thelearner-ledger](https://github.com/caseyrmorrison/thelearner-ledger) |
-| TaskFlow (web) | [caseyrmorrison/thelearner-taskflow-web](https://github.com/caseyrmorrison/thelearner-taskflow-web) |
-| Stockroom | [caseyrmorrison/thelearner-stockroom](https://github.com/caseyrmorrison/thelearner-stockroom) |
-| SearchLite | [caseyrmorrison/thelearner-searchlite](https://github.com/caseyrmorrison/thelearner-searchlite) |
-| TaskFlow iOS | [caseyrmorrison/thelearner-taskflow-ios](https://github.com/caseyrmorrison/thelearner-taskflow-ios) |
-| TaskFlow Android | [caseyrmorrison/thelearner-taskflow-android](https://github.com/caseyrmorrison/thelearner-taskflow-android) |
-| Rebound | [caseyrmorrison/thelearner-rebound](https://github.com/caseyrmorrison/thelearner-rebound) |
-
-Each repo carries its full teaching git history, its `v0.1.0` tag, and its open
-`feature/s2-*` (and `exercise/*`) branches. This handbook lives in
+**Published on GitHub.** Each project is its own public repository (the multi-repo
+pattern this workspace teaches) — linked from the table above, and each carries its full
+teaching git history, its `v0.1.0` tag, and its open `feature/s2-*` (and `exercise/*`)
+branches. This handbook lives in
 [caseyrmorrison/thelearner](https://github.com/caseyrmorrison/thelearner).
 
 ## The Engineering Handbook
