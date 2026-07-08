@@ -36,6 +36,23 @@ constant while the platform changes).
 clang/make) — see [SETUP.md](SETUP.md) for the verified versions, per-project first-run
 commands, and the short list of optional extras.
 
+**Published on GitHub.** Each project is its own repository (the multi-repo pattern this
+workspace teaches). The table's links point to local directories; the same code lives at:
+
+| Project | Repository |
+|---|---|
+| Ledger | [caseyrmorrison/thelearner-ledger](https://github.com/caseyrmorrison/thelearner-ledger) |
+| TaskFlow (web) | [caseyrmorrison/thelearner-taskflow-web](https://github.com/caseyrmorrison/thelearner-taskflow-web) |
+| Stockroom | [caseyrmorrison/thelearner-stockroom](https://github.com/caseyrmorrison/thelearner-stockroom) |
+| SearchLite | [caseyrmorrison/thelearner-searchlite](https://github.com/caseyrmorrison/thelearner-searchlite) |
+| TaskFlow iOS | [caseyrmorrison/thelearner-taskflow-ios](https://github.com/caseyrmorrison/thelearner-taskflow-ios) |
+| TaskFlow Android | [caseyrmorrison/thelearner-taskflow-android](https://github.com/caseyrmorrison/thelearner-taskflow-android) |
+| Rebound | [caseyrmorrison/thelearner-rebound](https://github.com/caseyrmorrison/thelearner-rebound) |
+
+Each repo carries its full teaching git history, its `v0.1.0` tag, and its open
+`feature/s2-*` (and `exercise/*`) branches. This handbook lives in
+[caseyrmorrison/thelearner](https://github.com/caseyrmorrison/thelearner).
+
 ## The Engineering Handbook
 
 Read these before (or alongside) the first project. They're written the way an
