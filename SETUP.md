@@ -17,6 +17,7 @@ extras the backlogs eventually reference.
 | **JDK** | Stockroom | 24 (targets LTS 21 bytecode) | `brew install --cask temurin` (any ≥ 21) |
 | **C++ compiler + make** | SearchLite | Apple clang 17, GNU Make 3.81 | both arrive with `xcode-select --install` |
 | **sqlite3 CLI** | Ledger lab S2-6 | 3.51 | ships with macOS; `brew install sqlite` for newer |
+| **nc (netcat)** | Switchboard (talk to the server by hand) | `/usr/bin/nc` | ships with macOS |
 
 Notably **not** required:
 
@@ -101,6 +102,22 @@ cd project-7-rebound-game && python3 -m http.server 8080   # → http://localhos
 The Sprint 3 "port to Godot" story is the one that eventually wants an install:
 `brew install godot` (~100MB) — deliberately deferred until the from-scratch version
 has taught you what the engine is automating.
+
+## Switchboard (project 8 — nothing to install)
+
+The networked key-value store is stdlib-only Python and runs from the venv like Ledger:
+
+```bash
+cd project-8-switchboard
+python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
+.venv/bin/python -m pytest        # unit + loopback integration tests
+.venv/bin/switchboard serve       # then talk to it with the client or `nc` in another shell
+```
+
+The Sprint 3 "reimplement the server in Go" story is the only one that wants an install:
+`brew install go` — deferred on purpose until the Python version has made the socket and
+concurrency mechanics explicit, so you can see exactly what Go's `net` package and
+goroutines automate away.
 
 ## Optional installs, keyed to when the curriculum needs them
 

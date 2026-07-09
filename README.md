@@ -28,12 +28,15 @@ alongside.
 | 5 | [TaskFlow iOS](https://github.com/caseyrmorrison/thelearner-taskflow-ios) — mobile client of #2 (`project-5-taskflow-ios/`) | Swift 6, SwiftUI | The iOS platform, value types, structured concurrency, declarative UI, MVVM, app lifecycle | ⭐⭐⭐ |
 | 6 | [TaskFlow Android](https://github.com/caseyrmorrison/thelearner-taskflow-android) — mobile client of #2 (`project-6-taskflow-android/`) | Kotlin, Jetpack Compose | The Android platform, coroutines/Flow, recomposition, build-enforced layering, Gradle | ⭐⭐⭐ |
 | 7 | [Rebound](https://github.com/caseyrmorrison/thelearner-rebound) — Breakout clone, no engine (`project-7-rebound-game/`) | JavaScript, HTML5 canvas | Game loops & fixed timestep, collision math, state machines, game feel, when to graduate to an engine | ⭐⭐ |
+| 8 | [Switchboard](https://github.com/caseyrmorrison/thelearner-switchboard) — networked key-value store (`project-8-switchboard/`) | Python 3.13, raw TCP sockets, pytest | Network programming below HTTP: sockets, message framing, wire-protocol design, concurrent-server models | ⭐⭐⭐ |
 
 **Recommended order:** 1 → 2 → 3 → 4. Each project assumes slightly more independence
 than the last. But they're self-contained — follow your interest if something pulls you.
 The two mobile projects (5, 6) are clients of TaskFlow's REST API — do project 2 first,
 then either or both; building the same app twice is the point (the architecture stays
-constant while the platform changes).
+constant while the platform changes). Project 8 (Switchboard) goes *below* the HTTP that
+projects 2, 5, and 6 assume — build it after project 2 (and after reading handbook module
+08) to see what a web framework hides: raw sockets, framing, and protocol design.
 
 **Tooling:** everything runs with a standard dev setup (git, Node, Python 3, a JDK,
 clang/make) — see [SETUP.md](SETUP.md) for the verified versions, per-project first-run
@@ -63,7 +66,8 @@ onboarding wiki at a good company would be:
 11. [Game Development](docs/13-game-development.md) — the game loop, fixed timesteps, collision detection, "juice", and an honest Godot/Unity/Unreal decision map
 12. [Anatomy of a Codebase](docs/14-anatomy-of-a-codebase.md) — why each ecosystem's projects are shaped the way they are: tooling contracts vs. conventions, what's committed vs. ignored, and how to read any unfamiliar repo (each project's ARCHITECTURE.md has a matching "Why this shape" section)
 13. [Game Modding](docs/15-game-modding.md) — how to mod a game you didn't write: the moddability spectrum, reconnaissance, file formats & mod loaders, the reverse-engineering deep end, and the legal/ethical rules — with a "make Rebound moddable" lab
-14. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+14. [Network Programming](docs/16-network-programming.md) — the layer beneath HTTP: sockets, why TCP is a byte stream (message framing), wire-protocol design, and the concurrent-server models (thread-per-connection vs. event loop) — anchored by the Switchboard project
+15. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
 
 ## The Capstone
 
