@@ -154,6 +154,26 @@ anything external (a Stripe account + the `stripe-best-practices` skill) — def
 purpose until the pure double-entry core is solid. The handbook's
 [FinTech module](docs/18-fintech.md) is the field this project grounds you in.
 
+## Aegis (project 11 — nothing to install)
+
+The defensive crypto/auth primitives are **pure-Python stdlib** (`hashlib`, `hmac`,
+`secrets`) — run from the venv like Ledger:
+
+```bash
+cd project-11-aegis
+python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
+.venv/bin/python -m pytest        # unit tests + RFC 6238 TOTP vectors + timing-attack demo
+.venv/bin/python -m aegis.demo    # hash a password, generate + verify a TOTP code, mint a token
+```
+
+Everything is verifiable offline (the TOTP tests check against the RFC's published vectors).
+The one optional external step is scanning the demo's TOTP secret into a real authenticator
+app to watch the codes match — no install, just your phone. The handbook's
+[Cybersecurity module](docs/19-cybersecurity.md) is the field this project grounds; note the
+project is **defensive** (primitives that protect an app) and, per its ADR, exists to
+*understand* crypto — production uses vetted libraries (argon2, a managed auth provider),
+never hand-rolled algorithms.
+
 ## Optional installs, keyed to when the curriculum needs them
 
 | Tool | Install | Needed when |

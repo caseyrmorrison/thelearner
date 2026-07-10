@@ -31,6 +31,7 @@ alongside.
 | 8 | [Switchboard](https://github.com/caseyrmorrison/thelearner-switchboard) — networked key-value store (`project-8-switchboard/`) | Python 3.13, raw TCP sockets, pytest | Network programming below HTTP: sockets, message framing, wire-protocol design, concurrent-server models | ⭐⭐⭐ |
 | 9 | [Nabla](https://github.com/caseyrmorrison/thelearner-nabla) — autodiff & neural net from scratch (`project-9-nabla/`) | Python 3.13, stdlib only, pytest | The math of ML made code: reverse-mode automatic differentiation, backpropagation, gradient descent, training a real net — no NumPy/PyTorch | ⭐⭐⭐⭐ |
 | 10 | [Tally](https://github.com/caseyrmorrison/thelearner-tally) — double-entry ledger engine (`project-10-tally/`) | Python 3.13, stdlib only, pytest | The foundation of fintech: double-entry bookkeeping, balanced journal entries, trial balance, money conservation as an invariant, idempotent append-only posting | ⭐⭐⭐ |
+| 11 | [Aegis](https://github.com/caseyrmorrison/thelearner-aegis) — defensive crypto/auth primitives (`project-11-aegis/`) | Python 3.13, stdlib only, pytest | Security engineering: salted password hashing, HMAC, constant-time comparison, TOTP 2FA, CSPRNG tokens — verified against RFC vectors, with insecure-vs-secure contrasts | ⭐⭐⭐ |
 
 **Recommended order:** 1 → 2 → 3 → 4. Each project assumes slightly more independence
 than the last. But they're self-contained — follow your interest if something pulls you.
@@ -71,7 +72,8 @@ onboarding wiki at a good company would be:
 14. [Network Programming](docs/16-network-programming.md) — the layer beneath HTTP: sockets, why TCP is a byte stream (message framing), wire-protocol design, and the concurrent-server models (thread-per-connection vs. event loop) — anchored by the Switchboard project
 15. [Machine Learning](docs/17-machine-learning.md) — a math-forward refresher: the learning problem as optimization, where losses come from (maximum likelihood), gradient descent, backpropagation derived, and attention/transformers — anchored by the Nabla project (equations render on GitHub)
 16. [FinTech](docs/18-fintech.md) — the field from zero, through an engineer's lens: money as a ledger (double-entry bookkeeping), how payments actually move, banking/compliance/lending, and why fintech is hard mode for engineers — anchored by the Tally project
-17. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+17. [Cybersecurity](docs/19-cybersecurity.md) — building systems that resist attack, defensively: the security mindset, threat modeling, the vulnerability classes and their defenses, cryptography for engineers, auth, secrets & supply chain, and the ethics/law of the field — anchored by the Aegis project
+18. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
 
 ## The Capstone
 
