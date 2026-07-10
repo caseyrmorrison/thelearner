@@ -119,6 +119,25 @@ The Sprint 3 "reimplement the server in Go" story is the only one that wants an 
 concurrency mechanics explicit, so you can see exactly what Go's `net` package and
 goroutines automate away.
 
+## Nabla (project 9 — nothing to install)
+
+The from-scratch autodiff engine and neural net is **pure-Python stdlib** — no NumPy, no
+PyTorch, on purpose (you implement the math, so you can't import past it). Runs from the
+venv like Ledger:
+
+```bash
+cd project-9-nabla
+python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
+.venv/bin/python -m pytest        # unit tests + gradient checks (autodiff vs finite differences)
+.venv/bin/python -m nabla.demo    # train a small net on a toy dataset; watch the loss fall
+```
+
+The Sprint-2 "vectorize with NumPy" and Sprint-3 stories are where a real numerical stack
+enters (`pip install numpy` into the venv) — deferred until the scalar version has made
+backprop explicit, so you see exactly what a tensor library and PyTorch's autograd
+automate. The handbook's [ML module](docs/17-machine-learning.md) is the theory this
+project makes concrete.
+
 ## Optional installs, keyed to when the curriculum needs them
 
 | Tool | Install | Needed when |
