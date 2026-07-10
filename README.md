@@ -30,6 +30,7 @@ alongside.
 | 7 | [Rebound](https://github.com/caseyrmorrison/thelearner-rebound) — Breakout clone, no engine (`project-7-rebound-game/`) | JavaScript, HTML5 canvas | Game loops & fixed timestep, collision math, state machines, game feel, when to graduate to an engine | ⭐⭐ |
 | 8 | [Switchboard](https://github.com/caseyrmorrison/thelearner-switchboard) — networked key-value store (`project-8-switchboard/`) | Python 3.13, raw TCP sockets, pytest | Network programming below HTTP: sockets, message framing, wire-protocol design, concurrent-server models | ⭐⭐⭐ |
 | 9 | [Nabla](https://github.com/caseyrmorrison/thelearner-nabla) — autodiff & neural net from scratch (`project-9-nabla/`) | Python 3.13, stdlib only, pytest | The math of ML made code: reverse-mode automatic differentiation, backpropagation, gradient descent, training a real net — no NumPy/PyTorch | ⭐⭐⭐⭐ |
+| 10 | [Tally](https://github.com/caseyrmorrison/thelearner-tally) — double-entry ledger engine (`project-10-tally/`) | Python 3.13, stdlib only, pytest | The foundation of fintech: double-entry bookkeeping, balanced journal entries, trial balance, money conservation as an invariant, idempotent append-only posting | ⭐⭐⭐ |
 
 **Recommended order:** 1 → 2 → 3 → 4. Each project assumes slightly more independence
 than the last. But they're self-contained — follow your interest if something pulls you.
@@ -69,7 +70,8 @@ onboarding wiki at a good company would be:
 13. [Game Modding](docs/15-game-modding.md) — how to mod a game you didn't write: the moddability spectrum, reconnaissance, file formats & mod loaders, the reverse-engineering deep end, and the legal/ethical rules — with a "make Rebound moddable" lab
 14. [Network Programming](docs/16-network-programming.md) — the layer beneath HTTP: sockets, why TCP is a byte stream (message framing), wire-protocol design, and the concurrent-server models (thread-per-connection vs. event loop) — anchored by the Switchboard project
 15. [Machine Learning](docs/17-machine-learning.md) — a math-forward refresher: the learning problem as optimization, where losses come from (maximum likelihood), gradient descent, backpropagation derived, and attention/transformers — anchored by the Nabla project (equations render on GitHub)
-16. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+16. [FinTech](docs/18-fintech.md) — the field from zero, through an engineer's lens: money as a ledger (double-entry bookkeeping), how payments actually move, banking/compliance/lending, and why fintech is hard mode for engineers — anchored by the Tally project
+17. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
 
 ## The Capstone
 

@@ -138,6 +138,22 @@ backprop explicit, so you see exactly what a tensor library and PyTorch's autogr
 automate. The handbook's [ML module](docs/17-machine-learning.md) is the theory this
 project makes concrete.
 
+## Tally (project 10 — nothing to install)
+
+The double-entry ledger engine is **pure-Python stdlib**, run from the venv like Ledger:
+
+```bash
+cd project-10-tally
+python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
+.venv/bin/python -m pytest        # unit + invariant tests (the books always balance)
+.venv/bin/python -m tally.demo    # post realistic transactions; read the trial balance
+```
+
+The Sprint-3 "wire a real Stripe payment into the ledger" story is the only one that needs
+anything external (a Stripe account + the `stripe-best-practices` skill) — deferred on
+purpose until the pure double-entry core is solid. The handbook's
+[FinTech module](docs/18-fintech.md) is the field this project grounds you in.
+
 ## Optional installs, keyed to when the curriculum needs them
 
 | Tool | Install | Needed when |
