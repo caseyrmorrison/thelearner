@@ -174,6 +174,25 @@ project is **defensive** (primitives that protect an app) and, per its ADR, exis
 *understand* crypto — production uses vetted libraries (argon2, a managed auth provider),
 never hand-rolled algorithms.
 
+## Depot (project 12 — nothing to install)
+
+The Steam install & Workshop locator is **pure-Python stdlib** (it parses Valve's text VDF/ACF
+manifests) — run from the venv like Ledger:
+
+```bash
+cd project-12-depot
+python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
+.venv/bin/python -m pytest        # unit tests against synthetic Steam-manifest fixtures
+.venv/bin/depot list              # scan your real Steam install (if present) for games + Workshop mods
+```
+
+Depot's tests run entirely on bundled fixtures, so they pass with or without Steam installed.
+If you *do* have Steam (on macOS it lives at `~/Library/Application Support/Steam`), `depot
+list` reads your actual manifests. The handbook's
+[Steam-modding module](docs/20-steam-game-modding.md) is the field this project grounds — it's
+read-only reconnaissance (it locates files; it never modifies a game), and modding stays
+single-player/sanctioned per the ethics in that module and doc 15/19.
+
 ## Optional installs, keyed to when the curriculum needs them
 
 | Tool | Install | Needed when |

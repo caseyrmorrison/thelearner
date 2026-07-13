@@ -32,6 +32,7 @@ alongside.
 | 9 | [Nabla](https://github.com/caseyrmorrison/thelearner-nabla) — autodiff & neural net from scratch (`project-9-nabla/`) | Python 3.13, stdlib only, pytest | The math of ML made code: reverse-mode automatic differentiation, backpropagation, gradient descent, training a real net — no NumPy/PyTorch | ⭐⭐⭐⭐ |
 | 10 | [Tally](https://github.com/caseyrmorrison/thelearner-tally) — double-entry ledger engine (`project-10-tally/`) | Python 3.13, stdlib only, pytest | The foundation of fintech: double-entry bookkeeping, balanced journal entries, trial balance, money conservation as an invariant, idempotent append-only posting | ⭐⭐⭐ |
 | 11 | [Aegis](https://github.com/caseyrmorrison/thelearner-aegis) — defensive crypto/auth primitives (`project-11-aegis/`) | Python 3.13, stdlib only, pytest | Security engineering: salted password hashing, HMAC, constant-time comparison, TOTP 2FA, CSPRNG tokens — verified against RFC vectors, with insecure-vs-secure contrasts | ⭐⭐⭐ |
+| 12 | [Depot](https://github.com/caseyrmorrison/thelearner-depot) — Steam install & Workshop locator (`project-12-depot/`) | Python 3.13, stdlib only, pytest | File-format literacy and Steam modding recon: parsing Valve's VDF/ACF manifests to find installed games, App IDs, install paths, and subscribed Workshop mods | ⭐⭐ |
 
 **Recommended order:** 1 → 2 → 3 → 4. Each project assumes slightly more independence
 than the last. But they're self-contained — follow your interest if something pulls you.
@@ -73,7 +74,8 @@ onboarding wiki at a good company would be:
 15. [Machine Learning](docs/17-machine-learning.md) — a math-forward refresher: the learning problem as optimization, where losses come from (maximum likelihood), gradient descent, backpropagation derived, and attention/transformers — anchored by the Nabla project (equations render on GitHub)
 16. [FinTech](docs/18-fintech.md) — the field from zero, through an engineer's lens: money as a ledger (double-entry bookkeeping), how payments actually move, banking/compliance/lending, and why fintech is hard mode for engineers — anchored by the Tally project
 17. [Cybersecurity](docs/19-cybersecurity.md) — building systems that resist attack, defensively: the security mindset, threat modeling, the vulnerability classes and their defenses, cryptography for engineers, auth, secrets & supply chain, and the ethics/law of the field — anchored by the Aegis project
-18. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
+18. [Modding Steam Games](docs/20-steam-game-modding.md) — the practical Steam layer on top of the game-modding module: the Workshop, finding a game's files, the `.acf`/`.vdf` manifest formats, publishing to the Workshop, and the platform gotchas (integrity-verify, auto-updates, VAC bans) — anchored by the Depot project
+19. [Glossary](docs/06-glossary.md) — industry vocabulary, decoded
 
 ## The Capstone
 
